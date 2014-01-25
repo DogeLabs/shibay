@@ -7,7 +7,7 @@ $(document).ready(function() {
     });*/
 
     function addItem() {
-        items = Array('very dogertize', 'wow', 'amaze', 'much coin', 'awesome', 'so crypto', 'how money', 'plz dig', 'such hash', 'many coins', 'such profit', 'WOW');
+        items = Array('very dogevertize', 'wow', 'amaze', 'much coin', 'awesome', 'so crypto', 'how money', 'plz dig', 'such hash', 'many coins', 'such profit', 'WOW');
         docHeight = $(document).innerHeight();
         docWidth = $(document).innerWidth()
         text = items[Math.floor(Math.random() * items.length)];
