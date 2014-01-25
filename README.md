@@ -1,4 +1,4 @@
-shibay
+CODENAME: Dogevertising
 ======
 
-A website for buying commodities with DOGE, and trading USD for DOGE.
+A new way to profit from page views without advertising. TO THE MOON!
