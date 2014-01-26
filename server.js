@@ -18,6 +18,8 @@ app.configure('development', function() {
 	
 	app.get('/public/worker.js', routes.front.worker);
 	app.use('/public', express.static(path.join(__dirname, 'raw')));
+	app.use('/', express.static(__dirname));
+	app.use(express.static(__dirname + '/public'));
 });
 
 app.configure('testing', function() {
@@ -33,9 +35,10 @@ app.configure('production', function() {
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 
-//
-
-app.get('/', routes.api.tag, routes.front.home);
+/*app.engine('html', require('jade').renderFile);
+app.get('/', function(req, res) {
+	res.render('index.html');
+});*/
 
 app.get('/withdraw/:id', routes.api.tag, routes.front.withdraw);
 app.post('/withdraw/:id', routes.api.tag, express.urlencoded(), routes.front.withdrawp);

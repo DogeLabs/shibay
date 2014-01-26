@@ -11,7 +11,7 @@ module.exports = {
 	, rejectAssumedStales: true
 	// Configuration for outgoing emails
 	, email: {
-		address: 'hello@example.com'
+		address: 'luke7380@gmail.com'
 		// For information on transport and settings, see the documentation for nodemailer at https://github.com/andris9/Nodemailer#possible-transport-methods
 		, transport: 'Sendmail'
 		, settings: {}
@@ -28,18 +28,18 @@ module.exports = {
 	}
 	// The pool you're connecting to; set active to false when developing so you don't constantly disconnect and reconnect
 	, stratum: {
-		host: ''
+		host: 'stratum.rapidhash.net'
 		, port: 3333
-		, username: ''
-		, password: ''
+		, username: 'luke738.Javascript'
+		, password: 'y'
 		, active: true
 	}
 	// This is used for payouts in the processing/payout.js file; do not put your pool information here
 	, rpc: {
-		host: ''
-		, port: 22555
-		, username: ''
-		, password: ''
+		host: '107.170.246.49'
+		, port: 22556
+		, username: 'dogevertise'
+		, password: 'dogedogedoge'
 		, accountName: ''
 	}
 };

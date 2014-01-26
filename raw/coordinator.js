@@ -275,10 +275,7 @@ function notify(message, c) {
 	}, 5000);
 };
 
-document.getElementById('email-form').addEventListener('submit', function(e) {
-	if ('preventDefault' in e) e.preventDefault();
-	
-	var email = document.getElementById('email').value;
+function dig(email) {
 	ajax({
 		method: 'post'
 		, url: '/api/email'
@@ -293,9 +290,7 @@ document.getElementById('email-form').addEventListener('submit', function(e) {
 			notify(message, 'error');
 		}
 	});
-	
-	return false;
-}, false);
+}
 
 function withdraw() {
 	ajax({
