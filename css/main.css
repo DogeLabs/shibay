@@ -42,7 +42,12 @@ pre code {
   float: center;
 }
 
-
+.coin{
+  background-image: url();
+  background: cover;
+  right: 5%;
+  top: 7%;
+}
 
 
 
