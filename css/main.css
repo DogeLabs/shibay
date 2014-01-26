@@ -13,7 +13,22 @@
 	background-repeat: no-repeat;
 }
 
+pre code {
+  display: block;
+  padding: 0.5em;
+  background: #23241f;
+}
+pre .tag,
+pre code {
+  color: #f8f8f2;
+}
 
+.subotron{
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
 
 
