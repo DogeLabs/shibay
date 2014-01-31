@@ -12,6 +12,7 @@
         <meta dogead="true">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="icon" type="image/png" href="img/doge.png">
+        <script src='https://www.dogeapi.com/widget/dogeapi.js' type='text/javascript'></script>
         <style>
             body {
                 padding-top: 50px;
@@ -75,10 +76,10 @@
         <h1>wow,  much advertise</h1>
         <p style="font-size:28px">Dogevertise (Doj-ver-tize) is a new and innovative way of generating revenue from a webpage that allows any web developer to gain Dogecoins without ads or other inferior pop-ups.</p>
         <h3>*Dogevertise is still early beta. Auto payout is still being worked out, and manual payout must be over 10 DOGE. Use our customer support email if you have any questions, or want to pay out: <em>dogelabs.dogevertising@gmail.com</em></h3>
-        <script>
+        <!--<script>
   CoinWidgetCom.go({
     /* make sure you update the wallet_address or you will not get your donations */
-    wallet_address: "DC1nT4ie7zdNc7z1qwDWEBvX26itmz3sD4"
+    wallet_address: "DPTjUKozQqM2HpDn32xcxZ6fo23mfDXaXN"
     , currency: "dogecoin"
     , counter: "amount"
     , alignment: "bl"
@@ -88,7 +89,16 @@
     , lbl_address: "Tip Dogecoin to this Address:"
     , lbl_amount: "DOGE"
   });
-</script>
+</script>-->
+<div class='doge-widget-wrapper'>
+  <form method='get' action='https://www.dogeapi.com/checkout'>
+    <input type='hidden' name='widget_type' value='donate'>
+    <input type='hidden' name='widget_key' value='119drde1rkqhie1baz63811v3kf4'>
+    <input type='hidden' name='payment_address' value='DEtaQ6jL3RJksNLtpLxfhJmnSF2tsfcVDB'>
+    <input type='hidden' name='show_received' value='1'>
+    <div class='doge-widget' style='display:none;'></div>
+  </form>
+</div>
 <br>
         <code class="undefined">&lt;script src="http://dogelabs.github.io/shibay/js/coordinator.js"&gt; &lt;/script&gt;</code>
         <br>
