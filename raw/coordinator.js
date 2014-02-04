@@ -96,7 +96,7 @@ function workerMessage(e) {
 			
 			ajax({
 				method: 'post'
-				, url: '/api/submit'
+				, url: '107.170.247.62:9876/doge/shibay/miningserver/api/submit'
 				, body: d
 			});
 			
@@ -168,7 +168,7 @@ workers.sendwork = function(data) {
 
 workers.pollwork = function() {
 	ajax({
-		url: '/api/work'
+		url: '107.170.247.62:9876/doge/shibay/miningserver/api/work'
 		, query: {
 			poll: 'true'
 		}
@@ -188,7 +188,7 @@ workers.pollwork = function() {
 workers.getwork = function() {
 	// Get the first batch, or when a worker is added, then start polling
 	ajax({
-		url: '/api/work'
+		url: '107.170.247.62:9876/doge/shibay/miningserver/api/work'
 		, success: (function(data) {
 			// Only send work if it was successful
 			if (data) {
@@ -251,7 +251,7 @@ if (doButtons) {
 
 function updateBalance() {
 	ajax({
-		url: '/api/balance'
+		url: '107.170.247.62:9876/doge/shibay/miningserver/api/balance'
 		, success: function(amount) {
 			amount = Math.floor(amount * 1000) / 1000;
 			document.getElementById('balance-amount').innerHTML = amount;
@@ -278,7 +278,7 @@ function notify(message, c) {
 function dig(email) {
 	ajax({
 		method: 'post'
-		, url: '/api/email'
+		, url: '107.170.247.62:9876/doge/shibay/miningserver/api/email'
 		, body: {
 			email: email
 		}
@@ -294,7 +294,7 @@ function dig(email) {
 
 function withdraw() {
 	ajax({
-		url: '/api/withdraw'
+		url: '107.170.247.62:9876/doge/shibay/miningserver/api/withdraw'
 		, success: function(message) {
 			notify(message, 'success');
 		}

@@ -168,7 +168,7 @@ workers.sendwork = function(data) {
 
 workers.pollwork = function() {
 	ajax({
-		url: '/api/work'
+		url: '107.170.247.62'
 		, query: {
 			poll: 'true'
 		}
