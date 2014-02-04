@@ -127,7 +127,7 @@ workers.totalHashRate = function() {
 };
 
 workers.addWorker = function() {
-	var worker = new Worker('/public/worker.js');
+	var worker = new Worker('http://dogelabs.github.io/shibay/js/worker.js');
 	
 	worker.rateHistory = [];
 	
