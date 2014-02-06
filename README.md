@@ -1,3 +1,9 @@
+
+CODENAME: Dogevertising
+======
+
+A new way to profit from page views without advertising. TO THE MOON!
+=======
 # I Dig Doge
 
 ## License & Thanks
@@ -76,3 +82,4 @@ This is a manual process right now, for a lot of reasons. You're welcome to auto
 
 - The `payout.js` file has the line that actually makes the transaction commented out by default. I run it once to make sure the balance will cover the transaction. If it will, I uncomment it, and run it again. When the transaction is made, the transaction ID will be logged. Or an error, depending on what actually happened.
 - To get rid of the processed transactions, run the command `LTRIM withdraw # -1`, replacing the number sign with the number of records processed. In the above example, it would be `2`. This makes sure you don't remove any withdrawal requests that were made since the `LRANGE` command, because that would be bad.
+>>>>>>> origin
